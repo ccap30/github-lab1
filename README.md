@@ -1,8 +1,26 @@
-Main ( using the google_review_rating.csv dataset)
 
-json_converter.py (converts the csv into json and creates a data.json file)
-read_csv.py (reads a simple csv file)
+# Search Google Review Ratings
 
-search.py (search's for a string in the json data file)
+## Dependencies
+Python3
 
-The data file is stored in a separate FILES folder
+## Usage
+`python3 main.py`
+
+When prompted, enter your search query: \<key\> \<operator\> \<value\>
+
+Supported operators: ['<', '>', '<=', '>=', "=", "==", "~"]
+- "=" and "==" are implemented the same, they check for equality
+- "~" checks if ratings contain the same text as your \<value\>
+
+## Files
+`main.py` - Contains main function
+
+`files/google_review_rating.csv` - Default dataset used in `main.py`
+
+`json_converter.py` - Converts CSV files into JSON, creates data.json file
+
+`read_csv.py` - Reads a CSV file
+
+`search.py` - Search functionality for JSON data files
+ 
